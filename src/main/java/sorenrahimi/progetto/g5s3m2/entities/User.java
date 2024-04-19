@@ -32,7 +32,7 @@ public class User implements UserDetails {
     @Enumerated(EnumType.STRING)
     private Role role;
 
-    public User(String username,String nome, String cognome, String email, String password) {
+    public User(String username, String nome, String cognome, String email, String password) {
         this.username = username;
         this.nome = nome;
         this.cognome = cognome;
@@ -40,6 +40,7 @@ public class User implements UserDetails {
         this.password = password;
         this.role = Role.USER;
     }
+
 
     /*@OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE)
     @JsonIgnore
